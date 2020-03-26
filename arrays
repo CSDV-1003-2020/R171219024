@@ -1,0 +1,28 @@
+#include<iostream>
+void push(int stack[],int &top,int elelment)
+{
+if(top==9)
+{
+cout<<"OVERFLOW";
+exit(1);
+}
+else
+{
+top ++;
+stack[top];
+}
+}
+void pop(int stack[],int &top)
+{
+if(top==-1)
+{
+cout<<"UNDERFLOW";
+exit(1);
+}
+else
+{
+cout<<"Element deleted is:"<<stack[top];
+top --;
+}
+}
+
