@@ -1,7 +1,7 @@
 #include<iostream>
-void push(int stack[],int &top,int elelment)
-{
-if(top==9)
+	void push(int stack[],int &top,int elelment)
+	{
+ 	if(top==9)
 {
 cout<<"OVERFLOW";
 exit(1);
