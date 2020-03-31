@@ -1,0 +1,18 @@
+#include<iostream>
+void main()
+{
+int x,y;
+int a,s,d,m;
+cout<<"Enter the 2 numbers respectively"<<"\n";
+cin>>x>>y;
+a=x+y;
+s=x-y;
+d=x/y;
+m=x*y;
+cout<<"Addition= "<<a;
+cout<<"Subtraction= "<<s;
+cout<<"Division= "<<d;
+cout<<"Multiplication= "<<m;
+}
+
+
