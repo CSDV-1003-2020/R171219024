@@ -14,5 +14,6 @@ cout<<"Subtraction= "<<s;
 cout<<"Division= "<<d;
 cout<<"Multiplication= "<<m;
 }
-
+ 
+Simple calculator 
 
