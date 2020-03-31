@@ -25,11 +25,7 @@ cout<<"Element deleted is:"<<stack[top];
 top --;
 }
 }
-void display(int stack[],int top)
-{
-for(int i=top; i>=0; i--)
-cout<<stack[i];
-}
+
 
 <<<<<<< HEAD
 
