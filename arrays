@@ -30,5 +30,51 @@ void display(int stack[],int top)
 for(int i=top; i>=0; i--)
 cout<<stack[i];
 }
-arrays
-!!!
+void main()
+{
+do
+{
+clrscr();
+cout<<"\t\tMENU\n";
+cout<<"\t1.INSERTION\n";
+cout<<"\t2.DELETION\n";
+cout<<"\t3.DISPLAY\n";
+cout<<"\t4.EXIT\n";
+cout<<"CHoose:- ";
+cin>>ch;
+switch(ch)
+{
+case 1: char ch1='y';
+        while(ch1=='y'||ch1=='Y')
+        {
+         cout<<"Enter the item to be inserted\n";
+         cin>>item;
+         insert(queue,item);
+         cout<<"Now the queue is:\n";
+         display(queue,front,rear);
+         cout<<"Do you want to insert more elements?(y/n)..\n";
+         cin>>ch1;
+        }
+        break;
+     case 2:char ch2='y';
+        while(ch2=='y'||ch2=='Y')
+        {
+         remove(queue);
+         cout<<"Now the queue is:\n";
+         display(queue,front,rear);
+         cout<<"Do you want to delete more elements?(y/n)..\n";
+         cin>>ch2;
+        }
+        break;
+     case 3:cout<<"The queue is:\n";
+        display(queue,front,rear);
+        break;
+     case 4:break;
+     default:cout<<"INVALID CHOICE\n";
+         break;
+   }
+}while(ch!=4);
+getch();
+clrscr();
+}
+
