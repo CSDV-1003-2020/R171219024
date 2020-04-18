@@ -25,7 +25,7 @@ cout<<"Element deleted is:"<<stack[top];
 top --;
 }
 }
-void display(int stack[],int top)
+void display(int stack[],int top)    //Function
 {
 for(int i=top; i>=0; i--)
 cout<<stack[i];
@@ -37,3 +37,4 @@ arrays
 =======
 
 >>>>>>> pranit
+>>>>>Sarthak
