@@ -13,7 +13,7 @@ ptr->item=n;
 ptr->next=NULL;
 return ptr;
 }
-void insert(node*np)
+void insert(node*np)                                    //insert function 
 {
 if(front==NULL)
 front=rear=np;
@@ -23,7 +23,7 @@ rear->next=save;
 rear=np;
 }
 }
-void del()
+void del()                                             //delete function
 {
 if(front==NULL)
   cout<<"UNDERFLOW!!\n";
@@ -34,13 +34,40 @@ if(front==NULL)
      delete ptr;
    }
 }
-void display(node*np)
+void display(node*np)                                   //display function 
 {
    while(np!=NULL)
    {
     cout<<np->item<<"->";
     np=np->next;
-   }
+   } 
   cout<<"\n";
 }
+void main()                                             //main function 
+{ 
+    front=rear=NULL;
+      int item1;
+      int ch;
+     
+
+
+       do                                              //declaring a do while loop       
+  {
+   clrsr();
+   cout<<"\t\t\tMENU\n";
+   cout<<"\t1.INSERTION\n";
+   cout<<"\t2.DELETION\n";
+   cout<<"\t3.DISPLAY\n";
+   cout<<"\t4.EXIT\n";
+   cout<<"Enter your choice(1-4)...\n";
+   cin>>ch;
+   
+}while(ch!=4);
+getch();
+clrscr();
+}
+
+
+}
+
 
