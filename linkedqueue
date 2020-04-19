@@ -80,6 +80,18 @@ void main()                                             //main function
          cin>>ch1;
         }
         break;
+
+     case 2:char ch2='y';
+        while(ch2=='y'||ch2=='Y')
+        {
+         pop();
+         cout<<"Now the stack is:\n";
+         display(top);
+         cout<<"Do you want to pop more elements?(y/n)..\n";
+         cin>>ch2;
+        }
+        break;
+
     }
    
 }while(ch!=4);
