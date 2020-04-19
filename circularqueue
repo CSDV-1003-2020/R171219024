@@ -37,4 +37,16 @@ void remove(int queue[])
      front++;
   }
 }
-
+void display(int queue[],int front,int rear)
+{
+int i=0;
+cout<<"\n Cir_Queue is:\n"
+<<"(front shown as>>> ,Rear as <<<AND free space as-)\n";
+if(rear>=front)
+{
+  for(i=0;i<front;i++)
+    cout<<">>>";
+  for(i=front;i<rear;i++)
+   cout<<queue[i]<<"<-";
+  cout<<queue[rear]<<"<<<\n";
+}
