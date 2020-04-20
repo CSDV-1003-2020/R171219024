@@ -1,0 +1,40 @@
+#include<iostream.h>
+#include<conio.h>
+#include<process.h>
+int queue[10],item,front=-1,rear=-1,ch;
+void insert(int queue[],int element)
+{
+if(rear==9&& front==0||front==rear+1)
+{
+  cout<<"OVERFLOW!!!ABORTING!!\n";
+  exit(1);
+}
+else if(rear==-1)
+   front=rear=0;
+else if(rear==9)
+   rear=0;
+else
+{
+  rear++;
+  queue[rear]=element;
+}
+}
+void remove(int queue[])
+{
+  if(front==-1)
+  {
+   cout<<"UNDERFLOW!!Abortng!!\n";
+   exit(1);
+  }
+  else
+  {
+   cout<<"Element deleted is: "<<queue[front]<<endl;
+   if(front==rear)
+    front=rear=-1;
+   else if(front==9)
+     front=0;//wrap around;
+   else
+     front++;
+  }
+}
+
