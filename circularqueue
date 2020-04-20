@@ -50,3 +50,4 @@ if(rear>=front)
    cout<<queue[i]<<"<-";
   cout<<queue[rear]<<"<<<\n";
 }
+.
