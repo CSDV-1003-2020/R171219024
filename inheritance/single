@@ -33,4 +33,4 @@ class derive : public base       //derived class
     a.product();
     return 0;
  }
- //end of code
+ //end of code                  //code for single level inheritence declared base class then derived class then main function 
