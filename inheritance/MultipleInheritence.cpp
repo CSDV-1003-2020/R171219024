@@ -32,4 +32,12 @@ class Triangle: public Polygon, public Output {
     int area ()
       { return width*height/2; }
 };
+
+int main () {
+  Rectangle rect (4,5);
+  Triangle trgl (4,5);
+  rect.print (rect.area());
+  Triangle::print (trgl.area());
+  return 0;
+}
   
