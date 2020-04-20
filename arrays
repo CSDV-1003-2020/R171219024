@@ -25,13 +25,23 @@ cout<<"Element deleted is:"<<stack[top];
 top --;
 }
 }
+<<<<<<< HEAD
 void display(int stack[],int top)    //Function
 {
 for(int i=top; i>=0; i--)
 cout<<stack[i];
 }
 arrays
+||||||| merged common ancestors
+void display(int stack[],int top)
+{
+for(int i=top; i>=0; i--)
+cout<<stack[i];
+}
+=======
+>>>>>>> 4f29dfcffa7c804048abebc956c259c3c7225dec
 
+//implementation of array
 <<<<<<< HEAD
 
 =======
