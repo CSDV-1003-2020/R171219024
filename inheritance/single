@@ -1,6 +1,7 @@
+//single level inheritance
 #include <iostream> 
 using namespace std; 
-class base    
+class base                      //base class
 {
    public:
      int x;
@@ -9,7 +10,7 @@ class base
      cout << "Enter the value of x = "; cin >> x;
    }
  };
-class derive : public base 
+class derive : public base       //derived class
 {
    private:
     int y;
@@ -24,11 +25,12 @@ class derive : public base
    }
  };
  
- int main()
+ int main()      //main function
  {
     derive a;     
     a.getdata();
     a.readdata();
     a.product();
     return 0;
- }        
+ }
+ //end of code
